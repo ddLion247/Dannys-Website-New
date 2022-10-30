@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react';
 import './App.css';
-import { Carousel } from './components/carousel/Carousel.js';
+import {Carousel} from './components/carousel/Carousel.js';
 
 function App() {
 
@@ -18,9 +18,8 @@ function App() {
   
   return (
     <div>
-      <Carousel />
+      <Carousel/>
     </div>
   );
 }
-
 export default App;
