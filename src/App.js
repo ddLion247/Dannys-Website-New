@@ -1,5 +1,6 @@
 import { useEffect, useState } from 'react';
 import './App.css';
+import { Carousel } from './components/carousel/Carousel.js';
 
 function App() {
 
@@ -17,11 +18,7 @@ function App() {
   
   return (
     <div>
-      <div>
-        <button onClick={() => setX(4)}>Add</button>
-      </div>
-      {array.map(element => <span>{element} </span>)}
-      
+      <Carousel />
     </div>
   );
 }
