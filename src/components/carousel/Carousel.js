@@ -48,7 +48,11 @@ export function Carousel() {
 
     function toggleShuffle() {
         togglePlay(!play);
-
+        
+        const variable = setInterval(() => {
+            rotateRight();
+        }, 1000);
+        clearInterval(variable);
     }
 
     return (
