@@ -12,3 +12,17 @@
   text-align: center;
   font-size: 1.2em;
 }
+
+.sidebar{
+  background-color: rgb(119, 0, 255);
+  width: 20%;
+  height: 105vh;
+  float: left;
+}
+
+.body {
+  background-color: orange;
+  width: 80%;
+  height: 100%;
+  float: right;
+}

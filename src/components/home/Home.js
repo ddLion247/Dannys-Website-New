@@ -1,16 +1,10 @@
 import './Home.css';
 import React from 'react';
-import { Helmet } from "react-helmet";
 import { Carousel } from '../carousel/Carousel.js';
 
-
 export function Home() {
-
     return (
         <div>
-            <Helmet>
-                <style>{"body { background-color: orange; }"}</style>
-            </Helmet>
             <div className='smallTxt'>~</div>
             <div className='title'>Daniel bertin</div>
             <Carousel/> {/* have carousel randomly start */}
