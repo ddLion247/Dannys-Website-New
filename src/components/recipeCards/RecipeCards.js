@@ -7,6 +7,9 @@ export function RecipeCards() {
     const allCards = [chili];//ADD TO all cards
 
     // return allCards.map((allCards) => <li>{allCards}</li>);
+    
+    const images = allCards.map((allCards) => <img src={allCards.picture} alt={allCards.title} />);
+    
 
     return (
         <div>
