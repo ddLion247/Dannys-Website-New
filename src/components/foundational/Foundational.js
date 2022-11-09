@@ -3,6 +3,6 @@ import React from 'react';
 
 export function Foundational() {
     return (
-        <div className='title'>Poop</div>
+        <div className='silly'>Pooping on my front lawn</div>
     )
 }
