@@ -5,7 +5,7 @@ export function Webserver() {
     return (
         <div>
             <div className='smallTxt'>~</div>
-            <div className='medTxt'>Cum</div>
+            <div className='medTxt'>Rum</div>
         </div>
     );
 }
