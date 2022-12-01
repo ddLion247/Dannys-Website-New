@@ -67,7 +67,6 @@ export function Cards() {
         }
       }, 0);
 
-
       const handleExpandClick = () => {
         setExpanded(!expanded);
       };
