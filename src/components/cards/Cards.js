@@ -16,7 +16,6 @@ import Collapse from '@mui/material/Collapse';
 import IconButton from '@mui/material/IconButton';
 import Typography from '@mui/material/Typography';
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
-import { maxHeight } from '@mui/system';
 
 const Notes = props => props.data.map(note => <div>{note.text}</div>);
 
@@ -33,10 +32,10 @@ const ExpandMore = styled((props) => {
 
 export function Cards() {
     
-    const c1 = {title:"Example", picture: "NOT YET Picture???" , ingredients:["Ingredients:"," ","Onions"," ","Garlic"], instructions:"Instructions"};
+    const c1 = {title:"Example", picture: "Picture" , ingredients:["Ingredients:"," ","Onions"," ","Garlic"], instructions:"Instructions"};
     const c2 = {title:"H", picture:"Yeet", ingredients:["Ingredients:"," ","Onions"," ","Garlic"], instructions:"Instructions"};
 
-    const [display, setDisplay] = useState([c1, c2]);
+    const display = [c1, c2];
     const initialData = [{ text: 'Loading Notes ... ' }];
     const [data, setData] = useState(initialData);
     const [expanded, setExpanded] = React.useState(false);
@@ -65,7 +64,7 @@ export function Cards() {
           }
           return setData([]);
         }
-      }, 0);
+      }, []);
 
       const handleExpandClick = () => {
         setExpanded(!expanded);
