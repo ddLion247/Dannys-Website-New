@@ -6,8 +6,12 @@
     border-radius: 0.2em;
     width: 10em;
     background-color: orange;
+    cursor: pointer;
+    display: block;
+    color: black;
+    text-decoration: none;
 }
 
 .sidebarItem:hover{
-    opacity: 0.3;
+    opacity: 0.6;
 }
